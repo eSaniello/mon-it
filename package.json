@@ -8,7 +8,7 @@
       "version": "5.2.0"
     }
   },
-  "description": "NativeScript Application",
+  "description": "Hackomation Application",
   "license": "SEE LICENSE IN <your-license-filename>",
   "repository": "<fill-your-repository-here>",
   "dependencies": {
@@ -25,16 +25,17 @@
     "nativescript-theme-core": "~1.0.4",
     "reflect-metadata": "~0.1.12",
     "rxjs": "~6.3.0",
-    "tns-core-modules": "~5.2.0",
+    "tns-core-modules": "5.2.2",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
-    "@angular/compiler-cli": "~7.2.0",
+    "@angular/compiler-cli": "7.2.10",
     "@nativescript/schematics": "~0.5.0",
     "@ngtools/webpack": "~7.2.0",
     "nativescript-dev-typescript": "~0.8.0",
     "nativescript-dev-webpack": "~0.20.0"
   },
   "gitHead": "f548ec926e75201ab1b7c4a3a7ceefe7a4db15af",
-  "readme": "NativeScript Application"
+  "readme": "NativeScript Application",
+  "author": "Shaniel Samadhan"
 }

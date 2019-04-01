@@ -1,8 +1,15 @@
-<StackLayout class="home-panel">
-    <!--Add your page content here-->
-    <Label textWrap="true" text="Tap the button." class="h1"></Label>
-
-    <Button text="Tap me :)" (tap)="onButtonTap()"></Button>
-
-    <Label textWrap="true" text="{{value}}" class="h1"></Label>
+<StackLayout>
+        <TabView id="tabViewContainer">
+                <TabViewItem title="First Tab">
+                    <StackLayout>
+                        <Label text="First tab"></Label>
+                    </StackLayout>
+                </TabViewItem>
+                <TabViewItem title="Second Tab">
+                    <StackLayout>
+                        <Label text="Second tab"></Label>
+                    </StackLayout>
+                </TabViewItem>
+            </TabView>
 </StackLayout>
+
