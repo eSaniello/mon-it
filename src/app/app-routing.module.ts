@@ -6,27 +6,28 @@ import { NativeScriptRouterModule } from "nativescript-angular/router";
 const routes: Routes = [
     {
         path: "",
-        redirectTo: "/(homeTab:home/default//browseTab:browse/default//searchTab:search/default)",
+        // tslint:disable-next-line: max-line-length
+        redirectTo: "/(equipmentTab:equipment/default//controllerTab:controller/default//monitoringTab:monitoring/default)",
         pathMatch: "full"
     },
 
     {
-        path: "home",
+        path: "equipment",
         component: NSEmptyOutletComponent,
-        loadChildren: "~/app/home/home.module#HomeModule",
-        outlet: "homeTab"
+        loadChildren: "~/app/tabs/equipment/equipment.module#EquipmentModule",
+        outlet: "equipmentTab"
     },
     {
-        path: "browse",
+        path: "controller",
         component: NSEmptyOutletComponent,
-        loadChildren: "~/app/browse/browse.module#BrowseModule",
-        outlet: "browseTab"
+        loadChildren: "~/app/tabs/controller/controller.module#ControllerModule",
+        outlet: "controllerTab"
     },
     {
-        path: "search",
+        path: "monitoring",
         component: NSEmptyOutletComponent,
-        loadChildren: "~/app/search/search.module#SearchModule",
-        outlet: "searchTab"
+        loadChildren: "~/app/tabs/monitoring/monitoring.module#MonitoringModule",
+        outlet: "monitoringTab"
     }
 ];
 
