@@ -1,17 +1,18 @@
-<TabView androidTabsPosition="bottom">
-
+<TabView androidTabsPosition="bottom" androidSelectedTabHighlightColor="green">
+    <Label class="fa" [text]="'fa-bluetooth' | fonticon"></Label>
+    
     <page-router-outlet
-        *tabItem="{title: 'Equipment', iconSource: getIconSource('icon')}"
+        *tabItem="{title: 'Equipment', iconSource: getIconSource('airplane_active')}"
         name="equipmentTab">
     </page-router-outlet>
 
     <page-router-outlet
-        *tabItem="{title: 'controller', iconSource: getIconSource('icon')}"
+        *tabItem="{title: 'controller', iconSource: getIconSource('control_disabled')}"
         name="controllerTab">
     </page-router-outlet>
 
     <page-router-outlet
-        *tabItem="{title: 'Monitoring', iconSource: getIconSource('icon')}"
+        *tabItem="{title: 'Monitoring', iconSource: getIconSource('map_disabled')}"
         name="monitoringTab">
     </page-router-outlet>
 
