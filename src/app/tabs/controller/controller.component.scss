@@ -1,1 +1,6 @@
 /* Add mobile styles for the component here.  */
+@import "../../../app-variables";
+
+StackLayout{
+    background: $background;
+}

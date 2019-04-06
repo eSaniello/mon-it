@@ -1,1 +1,66 @@
 /* Add mobile styles for the component here.  */
+@import "../../../app-variables";
+
+StackLayout {
+    background: $background;
+}
+
+#droneName {
+    color: $headings_color;
+}
+
+#dronePostfix {
+    color: $secondary_headings_color;
+}
+
+#droneNameLabel {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27;
+    line-height: normal;
+    text-align: center;
+    letter-spacing: 0.08;
+}
+
+#not_connected {
+    color: $secondary_headings_color;
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15;
+    line-height: normal;
+    text-align: center;
+}
+
+#drone {
+    height: 300;
+}
+
+#connect {
+    width: 250;
+    height: 40;
+    background: $primary;
+    border-radius: 10;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18;
+    line-height: normal;
+    text-align: center;
+    letter-spacing: 0.01;
+    color: $background;
+}
+
+#learn_more {
+    color: $tab_background;
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15;
+    line-height: normal;
+    text-align: center;
+}
+
+#hamburger{
+    width: 5;
+    height: 5;
+}

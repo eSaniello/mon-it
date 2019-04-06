@@ -1,6 +1,20 @@
 // Place any CSS rules you want to apply on both iOS and Android here.
 // This is where the vast majority of your CSS code goes.
 // Font icon class
-.fa {
-   font-family: "FontAwesome";
+* {
+   font-family: Montserrat-Regular;
+}
+
+ActionBar {
+   background: $background;
+}
+
+.actionbarTitle {
+   color: $headings_color;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 25;
+   line-height: normal;
+   text-align: center;
+   letter-spacing: 0.20;
 }

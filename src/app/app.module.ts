@@ -5,6 +5,7 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 
 import { TNSFontIconModule } from 'nativescript-ngx-fonticon';
+import { NativeScriptFormsModule } from "nativescript-angular";
 
 @NgModule({
     bootstrap: [
@@ -15,7 +16,8 @@ import { TNSFontIconModule } from 'nativescript-ngx-fonticon';
         AppRoutingModule,
         TNSFontIconModule.forRoot({
 			'fa': '../assets/fontawesome.css'
-		})
+        }),
+        NativeScriptFormsModule
     ],
     declarations: [
         AppComponent
