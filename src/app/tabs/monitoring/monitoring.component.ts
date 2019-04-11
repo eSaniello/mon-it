@@ -13,4 +13,12 @@ export class MonitoringComponent implements OnInit {
   ngOnInit() {
   }
 
+  onOpenMap(){
+    console.log("Open map btn Tapped!");
+  }
+
+  onShowFeed(){
+    console.log("Show Feed btn tapped!");
+  }
+
 }

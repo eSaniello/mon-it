@@ -13,4 +13,12 @@ export class ControllerComponent implements OnInit {
   ngOnInit() {
   }
 
+  onSetDestination(){
+    console.log("Set Destination btn tapped!");
+  }
+
+  onOpenController(){
+    console.log("Open Controller btn Tapped!");
+  }
+
 }
