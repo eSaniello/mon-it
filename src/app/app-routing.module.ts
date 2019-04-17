@@ -7,7 +7,8 @@ const routes: Routes = [
     {
         path: "",
         // tslint:disable-next-line: max-line-length
-        redirectTo: "/(equipmentTab:equipment/default//controllerTab:controller/default//monitoringTab:monitoring/default)",
+        redirectTo:
+            "/(equipmentTab:equipment/default//controllerTab:controller/default//monitoringTab:monitoring/default)",
         pathMatch: "full"
     },
 
@@ -20,13 +21,15 @@ const routes: Routes = [
     {
         path: "controller",
         component: NSEmptyOutletComponent,
-        loadChildren: "~/app/tabs/controller/controller.module#ControllerModule",
+        loadChildren:
+            "~/app/tabs/controller/controller.module#ControllerModule",
         outlet: "controllerTab"
     },
     {
         path: "monitoring",
         component: NSEmptyOutletComponent,
-        loadChildren: "~/app/tabs/monitoring/monitoring.module#MonitoringModule",
+        loadChildren:
+            "~/app/tabs/monitoring/monitoring.module#MonitoringModule",
         outlet: "monitoringTab"
     }
 ];
@@ -35,4 +38,4 @@ const routes: Routes = [
     imports: [NativeScriptRouterModule.forRoot(routes)],
     exports: [NativeScriptRouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

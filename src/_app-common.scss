@@ -2,19 +2,19 @@
 // This is where the vast majority of your CSS code goes.
 // Font icon class
 * {
-   font-family: Montserrat-Regular;
+  font-family: Montserrat-Regular;
 }
 
 ActionBar {
-   background: $background;
+  background: $background;
 }
 
 .actionbarTitle {
-   color: $headings_color;
-   font-style: normal;
-   font-weight: bold;
-   font-size: 25;
-   line-height: normal;
-   text-align: center;
-   letter-spacing: 0.20;
+  color: $headings_color;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25;
+  line-height: normal;
+  text-align: center;
+  letter-spacing: 0.2;
 }

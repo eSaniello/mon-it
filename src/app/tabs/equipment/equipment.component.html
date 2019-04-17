@@ -1,28 +1,42 @@
 <StackLayout>
-    <ActionBar>
-        <Label text="Mon-it" class="actionbarTitle"></Label>
-    </ActionBar>
+  <ActionBar>
+    <Label text="Mon-it" class="actionbarTitle"></Label>
+  </ActionBar>
 
-    <StackLayout style="height: 30"></StackLayout>
+  <StackLayout style="height: 30"></StackLayout>
 
-    <Label id="droneNameLabel">
-        <FormattedString>
-            <Span id="droneName" [text]="droneName "></Span>
-            <Span id="dronePostfix" [text]="dronePostfix "></Span>
-        </FormattedString>
-    </Label>
+  <Label id="droneNameLabel">
+    <FormattedString>
+      <Span id="droneName" [text]="droneName"></Span>
+      <Span id="dronePostfix" [text]="dronePostfix"></Span>
+    </FormattedString>
+  </Label>
 
-    <Image src="res://drone" stretch="aspectFit" id="drone"></Image>
+  <Image src="res://drone" stretch="aspectFit" id="drone"></Image>
 
-    <Label text="Drone not connected" id="not_connected" *ngIf="!connected"></Label>
+  <Label
+    text="Drone not connected"
+    id="not_connected"
+    *ngIf="!connected"
+  ></Label>
 
-    <StackLayout style="height: 5"></StackLayout>
+  <StackLayout style="height: 5"></StackLayout>
 
-    <Button id="connect" text="Connect" *ngIf="!connected" (tap)="onConnect()"></Button>
+  <Button
+    id="connect"
+    text="Connect"
+    *ngIf="!connected"
+    (tap)="onConnect()"
+  ></Button>
 
-    <Label text="Drone connected :)" id="not_connected" *ngIf="connected"></Label>
+  <Label text="Drone connected :)" id="not_connected" *ngIf="connected"></Label>
 
-    <StackLayout style="height: 5"></StackLayout>
+  <StackLayout style="height: 5"></StackLayout>
 
-    <Label id="learn_more" text="Learn more" *ngIf="!connected" (tap)="onLearnMore()"></Label>
+  <Label
+    id="learn_more"
+    text="Learn more"
+    *ngIf="!connected"
+    (tap)="onLearnMore()"
+  ></Label>
 </StackLayout>

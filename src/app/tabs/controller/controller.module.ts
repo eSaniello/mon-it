@@ -5,15 +5,8 @@ import { ControllerRoutingModule } from "./controller-routing.module";
 import { ControllerComponent } from "./controller.component";
 
 @NgModule({
-    imports: [
-        NativeScriptCommonModule,
-        ControllerRoutingModule
-    ],
-    declarations: [
-        ControllerComponent
-    ],
-    schemas: [
-        NO_ERRORS_SCHEMA
-    ]
+    imports: [NativeScriptCommonModule, ControllerRoutingModule],
+    declarations: [ControllerComponent],
+    schemas: [NO_ERRORS_SCHEMA]
 })
-export class ControllerModule { }
+export class ControllerModule {}

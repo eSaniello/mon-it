@@ -1,37 +1,37 @@
 // Import the theme’s variables. If you’re using a color scheme
 // other than “light”, switch the path to the alternative scheme,
 // for example '~nativescript-theme-core/scss/dark'.
-@import '~nativescript-theme-core/scss/light';
+@import "~nativescript-theme-core/scss/light";
 
 // Custom colors
-$background-dark: #F8F8F8 !default;
-$background-light: #FFFFFF !default;
+$background-dark: #f8f8f8 !default;
+$background-light: #ffffff !default;
 
 $blue-dark: #022734 !default;
-$blue-light: #02556E !default;
+$blue-light: #02556e !default;
 $blue-50: rgba($blue-dark, 0.5) !default;
 $blue-20: rgba($blue-dark, 0.2) !default;
 $blue-10: rgba($blue-dark, 0.1) !default;
 
-$accent-dark: #3A53FF !default;
-$accent-light: #4781FE !default;
+$accent-dark: #3a53ff !default;
+$accent-light: #4781fe !default;
 
-$success-dark: #06CE6A !default;
-$success-light: #00E676 !default;
+$success-dark: #06ce6a !default;
+$success-light: #00e676 !default;
 
 $warning-dark: #f39c11 !default;
-$warning-light: #F2C112 !default;
+$warning-light: #f2c112 !default;
 
-$error-dark: #D84039 !default;
-$error-light: #ED473F !default;
+$error-dark: #d84039 !default;
+$error-light: #ed473f !default;
 
-$midnight-dark: #0F336D !default;
-$midnight-light: #14418B !default;
+$midnight-dark: #0f336d !default;
+$midnight-light: #14418b !default;
 
 $night-dark: #023141 !default;
-$night-light: #01526C !default;
+$night-light: #01526c !default;
 
-$page-icon-color: #D7D7D7 !default;
+$page-icon-color: #d7d7d7 !default;
 
 // Sizes
 $page-content-placeholder-font-size: 20;
@@ -42,8 +42,8 @@ $page-content-placeholder-font-size: 20;
 
 // Colors
 $background: #071425;
-$tab_background: #444F5E;
-$primary: #F1CB1C;
+$tab_background: #444f5e;
+$primary: #f1cb1c;
 $secondary: lighten(#000, 46%);
 $disabled: lighten(#000, 62%);
 $accent: $accent-dark;
@@ -60,7 +60,7 @@ $btn-color-secondary: darken($btn-color, 10%);
 $btn-color-outline-highlighted: lighten($btn-color, 10%);
 
 //Text colors
-$text_active_color: #FBFCFC;
+$text_active_color: #fbfcfc;
 $text_inactive_color: rgba(181, 192, 192, 0.5);
 $headings_color: $text_active_color;
-$secondary_headings_color: #BA411F;
+$secondary_headings_color: #ba411f;

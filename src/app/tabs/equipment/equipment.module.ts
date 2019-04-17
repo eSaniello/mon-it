@@ -5,15 +5,8 @@ import { EquipmentRoutingModule } from "./equipment-routing.module";
 import { EquipmentComponent } from "./equipment.component";
 
 @NgModule({
-    imports: [
-        NativeScriptCommonModule,
-        EquipmentRoutingModule
-    ],
-    declarations: [
-        EquipmentComponent
-    ],
-    schemas: [
-        NO_ERRORS_SCHEMA
-    ]
+    imports: [NativeScriptCommonModule, EquipmentRoutingModule],
+    declarations: [EquipmentComponent],
+    schemas: [NO_ERRORS_SCHEMA]
 })
-export class EquipmentModule { }
+export class EquipmentModule {}

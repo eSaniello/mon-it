@@ -4,12 +4,10 @@ import { NativeScriptRouterModule } from "nativescript-angular/router";
 
 import { ControllerComponent } from "./controller.component";
 
-const routes: Routes = [
-    { path: "default", component: ControllerComponent }
-];
+const routes: Routes = [{ path: "default", component: ControllerComponent }];
 
 @NgModule({
     imports: [NativeScriptRouterModule.forChild(routes)],
     exports: [NativeScriptRouterModule]
 })
-export class ControllerRoutingModule { }
+export class ControllerRoutingModule {}

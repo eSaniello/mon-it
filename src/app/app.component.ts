@@ -1,13 +1,6 @@
-import {
-    Component,
-    OnInit
-} from "@angular/core";
-import {
-    isAndroid
-} from "tns-core-modules/platform";
-import {
-    SelectedIndexChangedEventData
-} from "tns-core-modules/ui/tab-view/tab-view";
+import { Component, OnInit } from "@angular/core";
+import { isAndroid } from "tns-core-modules/platform";
+import { SelectedIndexChangedEventData } from "tns-core-modules/ui/tab-view/tab-view";
 
 @Component({
     selector: "ns-app",
@@ -18,7 +11,7 @@ import {
 export class AppComponent implements OnInit {
     private tabSelectedIndex: number;
 
-    constructor(){ }
+    constructor() {}
 
     ngOnInit(): void {
         this.tabSelectedIndex = 0;
@@ -30,9 +23,7 @@ export class AppComponent implements OnInit {
 
         if (this.tabSelectedIndex === 0 && icon === "airplane")
             activeOrDisabled = "_active";
-        else
-            activeOrDisabled = "_disabled";
-
+        else activeOrDisabled = "_disabled";
 
         return iconPrefix + icon + activeOrDisabled;
     }
@@ -43,9 +34,7 @@ export class AppComponent implements OnInit {
 
         if (this.tabSelectedIndex === 1 && icon === "control")
             activeOrDisabled = "_active";
-        else
-            activeOrDisabled = "_disabled";
-
+        else activeOrDisabled = "_disabled";
 
         return iconPrefix + icon + activeOrDisabled;
     }
@@ -56,20 +45,15 @@ export class AppComponent implements OnInit {
 
         if (this.tabSelectedIndex === 2 && icon === "map")
             activeOrDisabled = "_active";
-        else
-            activeOrDisabled = "_disabled";
-
+        else activeOrDisabled = "_disabled";
 
         return iconPrefix + icon + activeOrDisabled;
     }
 
     onSelectedIndexChanged(args: SelectedIndexChangedEventData) {
-        if (args.newIndex === 0)
-            this.tabSelectedIndex = 0;
-        else if (args.newIndex === 1)
-            this.tabSelectedIndex = 1;
-        else
-            this.tabSelectedIndex = 2;
+        if (args.newIndex === 0) this.tabSelectedIndex = 0;
+        else if (args.newIndex === 1) this.tabSelectedIndex = 1;
+        else this.tabSelectedIndex = 2;
 
         // console.log(`TabSelectedIndex: ${this.tabSelectedIndex}`);
     }

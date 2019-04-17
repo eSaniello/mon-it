@@ -4,12 +4,10 @@ import { NativeScriptRouterModule } from "nativescript-angular/router";
 
 import { EquipmentComponent } from "./equipment.component";
 
-const routes: Routes = [
-    { path: "default", component: EquipmentComponent }
-];
+const routes: Routes = [{ path: "default", component: EquipmentComponent }];
 
 @NgModule({
     imports: [NativeScriptRouterModule.forChild(routes)],
     exports: [NativeScriptRouterModule]
 })
-export class EquipmentRoutingModule { }
+export class EquipmentRoutingModule {}

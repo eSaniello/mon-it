@@ -1,9 +1,9 @@
-@import 'app.component';
+@import "app.component";
 
 // Place any CSS rules you want to apply only on Android here
 TabView {
-    tab-text-color: $text_inactive_color;
-    selected-tab-text-color: $text_active_color;
-    tab-background-color: $tab_background;
-    android-selected-tab-highlight-color: $primary;
+  tab-text-color: $text_inactive_color;
+  selected-tab-text-color: $text_active_color;
+  tab-background-color: $tab_background;
+  android-selected-tab-highlight-color: $primary;
 }

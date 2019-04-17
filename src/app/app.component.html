@@ -1,19 +1,24 @@
-<TabView (selectedIndexChanged)="onSelectedIndexChanged($event)" androidTabsPosition="bottom">
-    <Label class="fa" [text]="'fa-bluetooth' | fonticon"></Label>
-    
-    <page-router-outlet
-        *tabItem="{title: 'Equipment', iconSource: setTab1IconSource('airplane')}"
-        name="equipmentTab">
-    </page-router-outlet>
+<TabView
+  (selectedIndexChanged)="onSelectedIndexChanged($event)"
+  androidTabsPosition="bottom"
+>
+  <Label class="fa" [text]="'fa-bluetooth' | fonticon"></Label>
 
-    <page-router-outlet
-        *tabItem="{title: 'controller', iconSource: setTab2IconSource('control')}"
-        name="controllerTab">
-    </page-router-outlet>
+  <page-router-outlet
+    *tabItem="{ title: 'Equipment', iconSource: setTab1IconSource('airplane') }"
+    name="equipmentTab"
+  >
+  </page-router-outlet>
 
-    <page-router-outlet
-        *tabItem="{title: 'Monitoring', iconSource: setTab3IconSource('map')}"
-        name="monitoringTab">
-    </page-router-outlet>
+  <page-router-outlet
+    *tabItem="{ title: 'controller', iconSource: setTab2IconSource('control') }"
+    name="controllerTab"
+  >
+  </page-router-outlet>
 
+  <page-router-outlet
+    *tabItem="{ title: 'Monitoring', iconSource: setTab3IconSource('map') }"
+    name="monitoringTab"
+  >
+  </page-router-outlet>
 </TabView>

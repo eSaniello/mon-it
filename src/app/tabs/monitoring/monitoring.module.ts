@@ -5,15 +5,8 @@ import { MonitoringRoutingModule } from "./monitoring-routing.module";
 import { MonitoringComponent } from "./monitoring.component";
 
 @NgModule({
-    imports: [
-        NativeScriptCommonModule,
-        MonitoringRoutingModule
-    ],
-    declarations: [
-        MonitoringComponent
-    ],
-    schemas: [
-        NO_ERRORS_SCHEMA
-    ]
+    imports: [NativeScriptCommonModule, MonitoringRoutingModule],
+    declarations: [MonitoringComponent],
+    schemas: [NO_ERRORS_SCHEMA]
 })
-export class MonitoringModule { }
+export class MonitoringModule {}
